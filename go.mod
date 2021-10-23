@@ -1,10 +1,11 @@
-module github.com/hashicorp/raft
+module github.com/wu-xian/raft
 
-go 1.12
+go 1.16
 
 require (
-	github.com/armon/go-metrics v0.0.0-20190430140413-ec5e00d3c878
-	github.com/hashicorp/go-hclog v0.9.1
-	github.com/hashicorp/go-msgpack v0.5.5
-	github.com/stretchr/testify v1.3.0
+	github.com/armon/go-metrics v0.3.10
+	github.com/hashicorp/go-hclog v1.0.0
+	github.com/hashicorp/go-msgpack v1.1.5
+	github.com/hashicorp/raft v1.3.2
+	github.com/stretchr/testify v1.7.0
 )
