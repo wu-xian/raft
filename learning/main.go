@@ -12,30 +12,9 @@ import (
 )
 
 func main() {
-	// fmt.Println("a")
-	// raftConfig := raft.DefaultConfig()
-	// raftConfig.LocalID = "mylocal"
-	// raftConfig.LogOutput = os.Stdout
-	// raftStable := raft.NewInmemStore()
-	// raftSnaps := raft.NewInmemSnapshotStore()
-	// serverAddr := raft.NewInmemAddr()
-	// _, raftTrans := raft.NewInmemTransport(serverAddr)
-	// fmt.Println("local addr", raftTrans.LocalAddr())
-	// fsm := &raft.MockFSM{}
-	// raftConfiguration, err := raft.GetConfiguration(raftConfig, fsm, raftStable, raftStable, raftSnaps, raftTrans)
-	// if err != nil {
-	// 	panic(err)
-	// }
-	// raftConfiguration.Servers = []raft.Server{raft.Server{ID: "12", Address: "localhost:123"}}
-	// err = raft.BootstrapCluster(raftConfig, raftStable, raftStable, raftSnaps, raftTrans, raftConfiguration)
-	// if err != nil {
-	// 	panic(err)
-	// }
-
 	id := flag.String("id", "", "")
 	addr := flag.String("addr", "", "")
 	flag.Parse()
-	_ = addr
 	if len(*id) == 0 {
 		panic("id is empty")
 	}
